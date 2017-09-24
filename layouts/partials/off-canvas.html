@@ -43,8 +43,8 @@
             <li><a class="email" target="_blank" href="{{ .url }}">{{ .name }}</a></li>
             {{ if .shortkey }}
             <li>{{ .shortkey }}</li>
+            <li><a target="_blank" href="{{ .Site.BaseURL }}PGPkeys.txt"><img class="key_img" src="{{ .Site.BaseURL }}img/key.png"></a></li>
             {{ end }}
-            <li><a target="_blank" href="{{ .Site.BaseURL }}misc/yourPGPkey.txt"><img class="key_img" src="{{ .Site.BaseURL }}img/key.png"></a></li>
         {{ end }}
         </ul>
 
