@@ -41,8 +41,9 @@
         <ul>
         {{ range .Site.Params.offcanvas.socialnetworks }}
             <li><a class="email" target="_blank" href="{{ .url }}">{{ .name }}</a></li>
-            <li>F0F0 F0F0 F0F0 F0F0 F0F0</li>
-            <li>F0F0 F0F0 F0F0 F0F0 F0F0</li>
+            {{ if .shortkey }}
+            <li>{{ .shortkey }}</li>
+            {{ end }}
             <li><a target="_blank" href="{{ .Site.BaseURL }}misc/yourPGPkey.txt"><img class="key_img" src="{{ .Site.BaseURL }}img/key.png"></a></li>
         {{ end }}
         </ul>
