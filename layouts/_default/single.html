@@ -1,12 +1,12 @@
 {{ partial "head" . }}
 <body>
-    
+
     <!-- {{ partial "off-canvas" . }} -->
 
     {{ partial "header" . }}
-    
+
     <div class="site-wrapper" id="full-wrapper">
-        
+
         <section class="single-wrap">
             <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
                 <div class="feat">
@@ -23,13 +23,13 @@
                 </div>
                 <h1 class="page-title" itemprop="name headline">{{ .Title }}</h1>
                 <div itemprop="articleBody">
-                    {{ .Content }}                    
+                    {{ .Content }}
                 </div>
                 <div class="feat share">
                 </div>
-                
+
                 {{ template "_internal/disqus.html" . }}
-                
+
             </article>
         </section>
 
@@ -39,7 +39,7 @@
     <div class="next-prev-arrows">
         {{ if .NextInSection }}
             <a rel="next" href="{{ .NextInSection.Permalink }}" id="next">
-                &larr; <span class="nav-title nav-title-next">{{ .NextInSection.Title }}</span> 
+                &larr; <span class="nav-title nav-title-next">{{ .NextInSection.Title }}</span>
             </a>
         {{ end }}
         {{ if .PrevInSection }}
