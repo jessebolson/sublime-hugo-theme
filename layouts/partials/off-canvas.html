@@ -1,6 +1,10 @@
 <div class="off-canvas">
     <figure class="avatar">
+      {{ if not .Site.Params.offcanvas.icon }}
         <img src="{{ .Site.BaseURL }}img/Gender Neutral User-80.svg" title="{{ with .Site.Params.name }}{{ . }}{{ end }}">
+      {{ else }}
+        <img src="{{ .Site.BaseURL }}img/{{ .Site.Params.offcanvas.icon }}" title="{{ with .Site.Params.name }}{{ . }}{{ end }}">
+      {{ end }}
     </figure>
     <div class="bio">
         {{ with .Site.Params.offcanvas.title }}
