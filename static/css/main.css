@@ -704,17 +704,17 @@ header {
 }
 
 .h-wrap h1.title a {
-    color: #333;
-    background: #f8f8ed;
+    color: #FFF;
+/*    background: #f8f8ed; */
     padding: 0.6em 0.8em;
     z-index: 999;
     text-decoration: none;
 }
 
-.h-wrap h1.title a:hover {
+/* .h-wrap h1.title a:hover {
     color: #FFF;
     background: #000;
-}
+} */
 
 .h-wrap h1.title a:active {
     filter: blur(1px);
